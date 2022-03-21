@@ -1,0 +1,9 @@
+header {
+    grid-area: my-header;
+    background-color: rgb(73, 69, 87);
+    nav {
+        grid-area: my-nav;
+        background-color: cornflowerblue;
+        padding: 15px; }
+
+}

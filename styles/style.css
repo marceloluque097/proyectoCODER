@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  color: gainsboro;
+  margin: 0 auto;
+  max-width: 2000px;
+  min-height: 300vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0px 0px 1fr 100px 200px;
+  grid-template-areas: "my-header   my-header   my-header" "my-nav      my-nav      my-nav" "my-section  my-section  my-section" "my-aside    my-aside    my-aside" "my-footer   my-footer   my-footer"; }
+
+h1 {
+  padding: 25px;
+  margin: 80px 40px 80px 5px;
+  color: black; }
+
+header {
+  grid-area: my-header;
+  background-color: #494557; }
+  header nav {
+    grid-area: my-nav;
+    background-color: cornflowerblue;
+    padding: 15px; }
+
+footer {
+  grid-area: my-footer; }
+
+h2 {
+  padding: 45px;
+  margin: 0px 0px 120px 50px;
+  color: black; }
+
+aside {
+  grid-area: my-aside;
+  background-color: #dcf5f6; }
+
+section {
+  grid-area: my-section;
+  background-color: white; }
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 150px 1px 1fr 100px;
+    grid-template-areas: "my-header my-header my-header" "my-nav my-nav my-nav" "my-aside my-section my-section" "my-footer my-footer my-footer"; } }
+
+@media (min-width: 1001px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 2px 1fr 100px;
+    grid-template-areas: "my-header   my-header   my-header" "my-nav      my-nav      my-nav   " "my-section  my-section  my-aside" "my-footer   my-footer   my-footer"; } }
+
+/*mi mapa*/
+.btn--twitter {
+  background-color: #6fe2ff;
+  color: white; }
+
+.btn--facebook {
+  background-color: #0104c3;
+  color: white; }
+
+.btn--instagram {
+  background-color: #ee0202;
+  color: white; }
+
+/*extend*/
+.redsocial, .redsocial--social, .redsocial--nueva, .redsocial--mark {
+  border: 3px solid red;
+  background-color: gold;
+  color: white; }
+
+.redsocial--social {
+  border-radius: 4px; }
+
+.redsocial--nueva {
+  border: 5px solid black; }
+
+.redsocial--mark {
+  background-color: red; }
+
+/*mixin*/
+.my_mixin {
+  height: 50px;
+  width: 500px;
+  background-color: #31b689;
+  color: white; }

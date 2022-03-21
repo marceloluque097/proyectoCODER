@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: gainsboro;
+    margin: 0 auto;
+    max-width: 2000px;
+    min-height: 300vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0px 0px 1fr 100px 200px;
+    grid-template-areas: 
+    "my-header   my-header   my-header"
+    "my-nav      my-nav      my-nav"
+    "my-section  my-section  my-section"
+    "my-aside    my-aside    my-aside"
+    "my-footer   my-footer   my-footer"
+}
