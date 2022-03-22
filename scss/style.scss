@@ -10,7 +10,8 @@
 h2{
     padding: 45px;
     margin: 0px 0px 120px 50px;
-    color:black
+    color: black;
+    
     }
 
 
@@ -57,54 +58,7 @@ section {
     }
 }
 
-/*mi mapa*/
 
-$redes: (
-        twitter: rgb(111, 226, 255),
-        facebook: rgb(1, 4, 195),
-        instagram: rgb(238, 2, 2),
-);
 
-@each $red, $color in $redes{
-    .btn--#{$red}{
-        background-color: $color;
-        color: white;
-    }
 
-};
-
-/*extend*/
-
-.redsocial{
-    border: 3px solid red;
-    background-color: gold;
-    color: white
-
-}
-.redsocial--social{
-    @extend .redsocial;
-    border-radius: 4px;
-};
-.redsocial--nueva{
-    @extend .redsocial;
-    border: 5px solid black;
-}
-.redsocial--mark{
-    @extend .redsocial;
-    background-color: red;
-}
-
-/*mixin*/
-
-@mixin size ($width, $height){
-    height: $height;
-    width: $width;
-}
-
-.my_mixin{
-    @include size (500px, 50px);
-    background-color: rgb(49, 182, 137);
-    color: white;
-
-}
 
